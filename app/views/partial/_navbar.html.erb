@@ -1,18 +1,40 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
-    <%= link_to "", root_path, class: "navbar__brand navbar__mainLogo" %>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-md-auto align-items-center">
-        <li>
-          <%= link_to "投稿", new_post_path, class: "btn btn-primary" %>
-        </li>
-        <li>
-          <%= link_to "", "#", class: "nav-link commonNavIcon profile-icon" %>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<div class="container">
+<header class="header">
+      <heading class="heading">
+        Delivery App
+      </heading>
+      <div class="navbar">
+        <ul class="nav-lists">
+          <%# 飛行機マーク 新規投稿 %>
+          <%= link_to new_post_path, :method => :get do %>
+            <li class="light three"><i class="fa fa-paper-plane fa-3x"></i></li>
+          <% end %>
+          <%# ユーザー一覧 %>
+          <li class="light three"><i class="fa fa-users fa-3x"></i></li>
+          <%# メニュー ドロップダウン %>
+          <li class="menu three">
+            <div class="dropdown">
+            	<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            		MENU
+            		<span class="caret"></span>
+            	</button>
+              <ul class="dropdown-menu" role="menu">
+                <%# マイページ %>
+              	<%= link_to user_path(current_user), method: :get do %>
+                  <li role="presentation">マイページ</li>
+                <% end %>
+                <%# 編集 %>
+              	<li role="presentation"><a href="#">編集</a></li>
+                <%# 新規投稿 %>
+              	<li role="presentation"><a href="#">新規投稿</a></li>
+                <%# ユーザー一覧 %>
+              	<li role="presentation"><a href="#">ユーザー一覧</a></li>
+                <%# ログアウト %>
+              	<li role="presentation"><a href="#">ログアウト</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+</div>

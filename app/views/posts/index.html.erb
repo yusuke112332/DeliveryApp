@@ -1,6 +1,25 @@
-<% @posts.each do |post| %>
-  <p><%= post.food_name %></p>
-  <%= link_to(post_path(post)) do %>
-          <%= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
+<div class="grand-wrap">
+  <% @posts.each do |post| %>
+    <div class="parent-wrap col-md-4">
+        <%# 画像 %>
+        <div class="child-wrap post-image">
+          <%= link_to(post_path(post)) do %>
+            <%= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
+          <% end %>
+        </div>
+
+        <%# 食べ物名 %>
+        <div class="child-wrap post-food_name">
+          食べ物名:<%= post.food_name %>
+        </div>
+
+        <%# 店名 %>
+        <div class="child-wrap post-store_name">
+          店名:<%= post.store_name %>
+        </div>
+
+        <%# 説明 %>
+        
+    </div>
   <% end %>
-<% end %>
+</div>
