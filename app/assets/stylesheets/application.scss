@@ -21,7 +21,7 @@
     height: 100px;
     text-align: center;
     margin-bottom: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 230px;
 }
 
 .child-wrap {
@@ -37,6 +37,12 @@ img {
 
 .post-food_name {
   margin-top: 180px;
+}
+
+.index-background {
+  background-color: #CCFFFF;
+  margin-right: 72px;
+  margin-top: -15px;
 }
 
 // ここから投稿機能の詳細ページ
@@ -122,4 +128,15 @@ h2 {
 
 .login-field {
   margin-bottom: 10px;
+}
+
+// いいね機能
+.like-show {
+  margin-bottom: 10px;
+}
+.like-container {
+  display: flex;
+}
+.like-delete {
+  padding-left: 10px;
 }

@@ -7,7 +7,30 @@
 <%# 店名 %>
 <p>店名:<%= @post.store_name %></p>
 
+<%# 説明 %>
 <p>説明:<%= @post.description %></p>
+
+<%# いいね機能 %>
+<div class="like-container">
+  <div class="like-show">
+    <h3>❤️: <%= @post.likes.count %></h3>
+  </div>
+  <div class="like-show like-delete">
+    <% if current_user.already_liked?(@post) %>
+      <%= button_to '❤️ を取り消す', post_like_path(@post), method: :delete %>
+    <% else %>
+      <%= button_to '❤️', post_likes_path(@post) %>
+    <% end %>
+  </div>
+</div>
+<div class="like-show">
+  <h4>❤️を押したユーザー名</h4>
+</div>
+<div class="like-show">
+  <% @post.liked_users.each do |user| %>
+    <li><%= user.name %></li>
+  <% end %>
+</div>
 
 <%# 戻るボタン %>
 <%= link_to "戻る", root_path, class: 'btn btn-primary' %>

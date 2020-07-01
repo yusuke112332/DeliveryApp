@@ -1,5 +1,8 @@
 class User < ApplicationRecord
 
+  has_many :likes, dependent: :destroy
+  has_many :liked_posts, through: :likes, source: :post
+
   has_many :posts, dependent: :destroy
 
   # Include default devise modules. Others available are:
@@ -8,6 +11,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :name, presence: true, length: { maximum: 50 }
+
+  def already_liked?(post)
+    self.likes.exists?(post_id: post.id)
+  end
 
   def update_without_current_password(params, *options)
     params.delete(:current_password)
