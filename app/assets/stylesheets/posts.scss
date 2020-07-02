@@ -1,3 +1,82 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// ここから投稿機能のindex画面
+.grand-wrap {
+  height: 100px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.parent-wrap {
+  // border: 1px solid green;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-bottom: 230px;
+}
+
+.child-wrap {
+    width: 200px;
+    height: 35px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-food_name {
+  margin-top: 180px;
+  font-weight: bold;
+}
+
+.post-store_name {
+  font-weight: bold;
+}
+
+.index-background {
+  background-color: #CCFFFF;
+  margin-right: 72px;
+  margin-top: -15px;
+}
+// ここから投稿機能の詳細ページ
+.show-image {
+  width: 750px;
+  height: 750px;
+  margin: 50px 0 0 200px;
+
+}
+
+.delete-post-icon {
+  // margin: 50px 0 0 250px;
+  // text-align: center;
+}
+
+// ここから新規投稿のページ
+.text-center {
+  text-align: center!important;
+  padding-top: 20px;
+}
+
+.new-item {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 40px;
+}
+
+.new-description{
+  display: inline;
+}
+
+textarea{
+  vertical-align:top;
+}
+
+.new-button {
+  margin-top: 10px;
+}

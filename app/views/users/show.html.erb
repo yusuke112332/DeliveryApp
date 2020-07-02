@@ -1,15 +1,11 @@
 <h1><%= @user.name %></h1>
-
 <% if @user == current_user %>
-
-          <%= link_to "プロフィールを編集", edit_user_registration_path, class: "btn btn-outline-dark edit-profile-btn" %>
-          <button type="button" class="setting" data-toggle="modal" data-target="#exampleModal"></button>
-
-  
+  <%= link_to "プロフィールを編集", edit_user_registration_path, class: "btn btn-outline-dark edit-profile-btn" %>
+  <button type="button" class="setting" data-toggle="modal" data-target="#exampleModal"></button>
 <% end %>
-
 <h3>いいねしている投稿</h3>
 <% @user.liked_posts.each do |post| %>
   <%= post.user.email %>
-  <%= post.content %>
+  <%= post.food_name %>
+  <%= post.store_name %>
 <% end %>

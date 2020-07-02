@@ -1,3 +1,10 @@
-// Place all the styles related to the likes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// いいね機能
+.like-show {
+  margin-bottom: 10px;
+}
+.like-container {
+  display: flex;
+}
+.like-delete {
+  padding-left: 10px;
+}
