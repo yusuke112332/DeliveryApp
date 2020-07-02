@@ -10,7 +10,11 @@
             <li class="light three"><i class="fa fa-paper-plane fa-3x"></i></li>
           <% end %>
           <%# ユーザー一覧 %>
-          <li class="light three"><i class="fa fa-users fa-3x"></i></li>
+          <%= link_to users_path, :method => :get do %>
+            <li class="light three"><i class="fa fa-users fa-3x"></i></li>
+          <% end %>
+
+
           <%# メニュー ドロップダウン %>
           <li class="menu three">
             <div class="dropdown">
@@ -35,7 +39,9 @@
                 <% end %>
 
                 <%# ユーザー一覧 %>
-              	<li role="presentation"><a href="#">ユーザー一覧</a></li>
+                <%= link_to users_path, :method => :get do %>
+              	  <li role="presentation">ユーザー一覧</li>
+                <% end %>
 
                 <%# ログアウト %>
               	<li role="presentation"><a href="#">ログアウト</a></li>
