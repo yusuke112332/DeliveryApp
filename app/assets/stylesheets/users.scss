@@ -74,3 +74,37 @@ h2 {
   // height: 35px;
   // text-align: center;
 }
+
+// ユーザーの編集画面
+.h2-edit {
+  text-align: center;
+}
+
+.signup-edit-container {
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  border: 3px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.password-margin {
+  margin-top: 5px;
+}
+
+.password-margin-second {
+  margin-top: -5px;
+}
+
+.current-password-margin {
+  margin-top: 3px;
+}
+
+.new-password-margin {
+  margin-top: -5px;
+}
+
+.edit-btn {
+  margin-top: 12px;
+}
