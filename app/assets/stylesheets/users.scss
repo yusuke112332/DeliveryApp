@@ -42,3 +42,35 @@ h2 {
 .login-field {
   margin-bottom: 10px;
 }
+
+
+.icon_image {
+  width: 200px;
+  height: 200px;
+  //サイズ指定
+  object-fit: cover;
+  //タテヨコ比を変えないままトリミング
+}
+
+// ユーザー一覧画面
+.grand-wrap-users {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+  height: 100px;
+  width: auto;
+}
+
+.parent-wrap-users {
+  // width: 50%;
+  // height: 100px;
+  // text-align: center;
+  margin-bottom: 30px;
+  // margin-bottom: 230px;
+}
+
+.child-wrap-users {
+  // width: 200px;
+  // height: 35px;
+  // text-align: center;
+}
