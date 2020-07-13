@@ -1,13 +1,31 @@
-<h1><%= @user.name %>さんの詳細ページ</h1>
+<div class="icon_image-user-show-1 user-adjust">
+  <img src=<%= @user.image %> class = "icon_image-user-show">
+</div>
+
+<div class="user-name-show user-adjust">
+  <h1><%= @user.name %>さんの詳細ページ</h1>
+</div>
+
+<div class="profile-user-show user-adjust">
 <% if @user == current_user %>
   <%= link_to "プロフィールを編集", edit_user_registration_path, class: "btn btn-outline-dark edit-profile-btn" %>
-  <%# <button type="button" class="setting" data-toggle="modal" data-target="#exampleModal"></button> %>
 <% end %>
-<h3>いいねしている投稿</h3>
+</div>
+
+<div class="like-user-show">
+  <h3>いいねしている投稿↓</h3>
+</div>
+
 <% @user.liked_posts.each do |post| %>
   <%= link_to(post_path(post)) do %>
-    <%= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
+    <%= image_tag post.photos.first.image.url(:medium), class: "card-img-top-2" %>
   <% end %>
-  <%= post.food_name %>
-  <%= post.store_name %>
+  <div class="like-background">
+    <div class="show-foodname">
+      食べ物名:<%= post.food_name %>
+    </div>
+    <div class="show-storename">
+      店名:<%= post.store_name %>
+    </div>
+  </div>
 <% end %>

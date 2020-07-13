@@ -7,16 +7,16 @@
 }
 .heading {
   width: 50%;
-  color: green;
+  color: #F4A460;
   font-size: 50px;
   margin: 10px 0 0 20px;
 }
 .heading-delivery-app {
   text-decoration:none !important;
-  color: green;
+  color: #F4A460;
 }
 .heading-delivery-app:hover {
-  color: green;
+  color: #F4A460;
 }
 
 // ここから右半分
@@ -39,4 +39,8 @@ li {
 
 .three {
   margin-right: 125px;
+}
+
+.fa-sandybrown {
+  color: #F4A460;
 }

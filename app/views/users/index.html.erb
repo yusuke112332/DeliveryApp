@@ -1,5 +1,3 @@
-<%# <h1>ユーザー一覧</h1> %>
-
 <div class="grand-wrap-users">
   <% @users.each do |user| %>
     <div class="parent-wrap-users col-md-4">
@@ -13,4 +11,6 @@
   <% end %>
 </div>
 
-
+<div class="paginate-users">
+  <%= paginate @users %>
+</div>

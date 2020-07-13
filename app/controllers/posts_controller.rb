@@ -20,12 +20,16 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.limit(10).includes(:photos, :user).order('created_at DESC')
+    @posts = Post.limit(10).includes(:photos, :user)
+    @q = Post.ransack(params[:q])
+    @posts = @q.result(distinct: true).order(created_at: :desc).page(params[:page]).per(9)
   end
 
   def show
     @post = Post.find_by(id: params[:id])
     @like = Like.new
+    @comments = @post.comments
+    @comment = Comment.new
   end
 
   def destroy

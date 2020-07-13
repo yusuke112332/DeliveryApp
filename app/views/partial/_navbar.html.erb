@@ -7,13 +7,12 @@
         <ul class="nav-lists">
           <%# 飛行機マーク 新規投稿 %>
           <%= link_to new_post_path, :method => :get do %>
-            <li class="light three"><i class="fa fa-paper-plane fa-3x"></i></li>
+            <li class="light three"><i class="fa fa-paper-plane fa-3x fa-sandybrown"></i></li>
           <% end %>
           <%# ユーザー一覧 %>
           <%= link_to users_path, :method => :get do %>
-            <li class="light three"><i class="fa fa-users fa-3x"></i></li>
+            <li class="light three"><i class="fa fa-users fa-3x fa-sandybrown"></i></li>
           <% end %>
-
 
           <%# メニュー ドロップダウン %>
           <li class="menu three">
@@ -44,7 +43,9 @@
                 <% end %>
 
                 <%# ログアウト %>
-              	<li role="presentation"><a href="#">ログアウト</a></li>
+              	<li role="presentation">
+                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                </li>
               </ul>
             </div>
           </li>

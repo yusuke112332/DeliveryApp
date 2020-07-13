@@ -1,63 +1,64 @@
-// ここから投稿機能のindex画面
+// 投稿のindexページ↓
+
+// 検索
+.search {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+// 投稿
 .grand-wrap {
-  height: 100px;
-  width: auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 100px;
 }
 
-.parent-wrap {
-  // border: 1px solid green;
-    width: 50%;
-    height: 100px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-bottom: 230px;
-}
-
-.child-wrap {
-    width: 200px;
-    height: 35px;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.post-food_name {
-  margin-top: 180px;
-  font-weight: bold;
-}
-
-.post-store_name {
-  font-weight: bold;
-}
-
-.index-background {
-  background-color: #CCFFFF;
-  margin-right: 72px;
-  margin-top: -15px;
-}
 // ここから投稿機能の詳細ページ
 .show-image {
   width: 750px;
   height: 750px;
   margin: 50px 0 0 200px;
-
 }
 
-.delete-post-icon {
-  // margin: 50px 0 0 250px;
-  // text-align: center;
+.post-show-back {
+  margin-right: 15px;
+}
+
+.post-show-btn {
+  display: flex;
+  margin-top: 15px;
+}
+
+.grand-wrap-show {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parent-wrap-show {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.icon_image-user-show {
+  border-radius: 50%;
+}
+
+.table-adjustment {
+  margin-top: 10px;
+}
+
+// 投稿の詳細画面の投稿機能
+.comment-inline {
+  display: flex;
+}
+
+.comment-btn {
+  margin-left: 10px;
 }
 
 // ここから新規投稿のページ
 .text-center {
   text-align: center!important;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .new-item {
