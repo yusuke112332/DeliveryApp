@@ -1,5 +1,5 @@
 <div>
-
+<%# 検索機能 %>
   <div class="search">
     <%= search_form_for @q do |f| %>
       <%= f.label :food_name, "食べ物名:" %>
@@ -10,7 +10,7 @@
       <%= f.submit "検索" %>
     <% end %>
   </div>
-
+<%# 投稿一覧 %>
   <div class="post">
     <div class="grand-wrap">
       <% @posts.each do |post| %>
@@ -42,7 +42,7 @@
       <% end %>
     </div>
   </div>
-
+<%# ページネーション %>
   <div class="pagenation">
     <div class="paginate">
       <%= paginate @posts %>
