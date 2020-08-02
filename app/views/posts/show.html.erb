@@ -37,7 +37,7 @@
 
 <div class="like-show grand-wrap-show">
   <% @post.liked_users.each do |user| %>
-    <div class="parent-wrap-show col-md-3">
+    <div class="parent-wrap-show col-md-3 col-sm-3 col-xs-3">
       <div class="child-wrap-show">
         <img src=<%= user.image %> class = "icon_image-user-show">
       </div>
@@ -49,7 +49,7 @@
 </div>
 
 <%# コメントが表示される %>
-<h2>コメント一覧</h2>
+<h2 class="comment-padding">コメント一覧</h2>
 <% @comments.each do |c| %>
   <div>
     <%= c.user.name %>さん:</a>
@@ -65,7 +65,7 @@
     <%= f.hidden_field :post_id, value: @post.id %>
     <br>
     <div class="comment-btn">
-      <%= f.submit 'コメントする', class: "btn btn-primary" %>
+      <%= f.submit 'コメントする', class: "btn btn-primary btn-padding" %>
     </div>
   </div>
 <% end %>

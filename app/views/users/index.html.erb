@@ -1,16 +1,22 @@
-<div class="grand-wrap-users">
-  <% @users.each do |user| %>
-    <div class="parent-wrap-users col-md-4">
-      <div class="child-wrap-users">
-        <img src=<%= user.image %> class = "icon_image">
-      </div>
-      <div class="child-wrap-users">
-        <a href="/users/<%= user.id %>"><%= user.name %></a>
-      </div>
-    </div>
-  <% end %>
-</div>
+<div>
 
-<div class="paginate-users">
-  <%= paginate @users %>
+  <div class="grand-wrap-users">
+    <% @users.each do |user| %>
+      <div class="parent-wrap-users col-md-4">
+        <div class="child-wrap-users">
+          <img src=<%= user.image %> class = "icon_image">
+        </div>
+        <div class="child-wrap-users">
+          <a href="/users/<%= user.id %>"><%= user.name %></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="pagenation">
+    <div class="paginate-users">
+      <%= paginate @users %>
+    </div>
+  </div>
+
 </div>

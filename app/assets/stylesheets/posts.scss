@@ -1,5 +1,5 @@
+@media screen and (min-width:960px) {
 // 投稿のindexページ↓
-
 // 検索
 .search {
   text-align: center;
@@ -80,4 +80,98 @@ textarea{
 
 .new-button {
   margin-top: 10px;
+}
+
+}
+// タブレット
+@media screen and (min-width:560px) and (max-width:959px) {
+  // 投稿のindexページ↓
+// 検索
+.search {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+// 投稿
+.grand-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// ここから投稿機能の詳細ページ
+// .show-image {
+//   width: 750px;
+//   height: 750px;
+//   margin: 50px 0 0 200px;
+// }
+
+// .post-show-back {
+//   margin-right: 15px;
+// }
+
+// .post-show-btn {
+//   display: flex;
+//   margin-top: 15px;
+// }
+
+// .grand-wrap-show {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .parent-wrap-show {
+//   text-align: center;
+//   margin-bottom: 25px;
+// }
+
+.icon_image-user-show {
+  border-radius: 50%;
+}
+
+// .table-adjustment {
+//   margin-top: 10px;
+// }
+
+// ここから新規投稿のページ
+.new-item {
+  padding: 10px;
+}
+
+}
+
+// スマホ
+@media screen and (min-width:320px) and (max-width:559px) {
+  // 投稿のindexページ↓
+  .search-br {
+    display: block;
+  }
+  .search-br2 {
+    margin-left: 32px;
+  }
+  // ここから投稿機能の詳細ページ
+
+  .parent-wrap-show {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .icon_image-user-show {
+    border-radius: 50%;
+    height: 340px;
+    width: 340px;
+  }
+  
+  .btn-padding {
+    margin: 15px 0;
+  }
+
+  .comment-padding {
+    margin: 10px;
+  }
+
+  // ここから新規投稿のページ
+  .new-item {
+    padding: 25px;
+  }
+
 }

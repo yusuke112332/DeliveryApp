@@ -1,3 +1,4 @@
+@media screen and (min-width:960px) {
 // ユーザーの新規登録画面
 h2 {
   text-align: center;
@@ -29,6 +30,13 @@ h2 {
   margin-top: 10px;
 }
 
+.signup-title {
+  color: #F4A460;
+  text-align: center;
+  margin-left: 90px;
+  font-size: 50px;
+}
+
 // ユーザーのログイン画面
 .login-container {
   position: absolute;
@@ -46,30 +54,36 @@ h2 {
 .icon_image {
   width: 200px;
   height: 200px;
-  //サイズ指定
   object-fit: cover;
-  //タテヨコ比を変えないままトリミング
   border-radius: 50%;
+}
+
+.login-title {
+  color: #F4A460;
+  text-align: center;
+  margin-left: 60px;
+  font-size: 50px;
 }
 
 // ユーザー一覧画面
 .grand-wrap-users {
   display: flex;
   flex-wrap: wrap;
-  padding: 100px;
-  height: 100px;
-  width: auto;
+  margin-top: 50px;
+  // padding: 100px;
+  // height: 100px;
+  // width: auto;
 }
 
 .parent-wrap-users {
   margin-bottom: 30px;
 }
 
-.paginate-users {
-  position: absolute;
-  top: 1000px;
-  left: 630px;
-}
+// .paginate-users {
+//   position: absolute;
+//   top: 1000px;
+//   left: 630px;
+// }
 
 // ユーザーの編集画面
 .h2-edit {
@@ -156,4 +170,86 @@ h2 {
 .like-background {
   background-color: #FFDAB9;
   margin: 0 160px 0 200px;
+}
+
+}
+// タブレット
+@media screen and (min-width:560px) and (max-width:959px) {
+  // ログイン画面
+  .login-container {
+    border: 3px solid #F4A460;
+  }
+  .login-title {
+    color: #F4A460;
+    text-align: center;
+    font-size: 50px;
+  }
+  // 新規登録画面
+  .signup-container {
+    border: 3px solid #F4A460;
+    padding: 10px;
+  }
+  .signup-title {
+    color: #F4A460;
+    text-align: center;
+    font-size: 50px;
+  }
+  .field {
+    margin-bottom: 10px;
+  }
+  // ユーザーの編集画面
+  .signup-edit-container {
+    border: 3px solid #F4A460;
+    padding: 10px;
+  }
+}
+// スマホ
+@media screen and (min-width:320px) and (max-width:559px) {
+  // ログイン画面
+  .login-container {
+    border: 3px solid #F4A460;
+  }
+  .login-title {
+    color: #F4A460;
+    text-align: center;
+    font-size: 40px;
+  }
+  // 新規登録画面
+  .signup-container {
+    border: 3px solid #F4A460;
+    padding: 10px;
+  }
+  .signup-title {
+    color: #F4A460;
+    text-align: center;
+    font-size: 40px;
+  }
+  .field {
+    margin-bottom: 10px;
+  }
+  // ユーザーの詳細画面
+  .card-img-top-2 {
+    height: 350px;
+  }
+
+  // ユーザーの編集画面
+  .signup-edit-container {
+    border: 3px solid #F4A460;
+    padding: 10px;
+  }
+
+  // ユーザー一覧画面
+  .icon_image {
+    border-radius: 50%;
+    height: 340px;
+    width: 340px;
+  }
+
+  .child-wrap-users {
+    padding: 5px;
+  }
+
+  .pagenation {
+    padding-top: 10px;
+  }
 }

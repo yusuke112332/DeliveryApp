@@ -2,11 +2,14 @@
 <%# 検索機能 %>
   <div class="search">
     <%= search_form_for @q do |f| %>
-      <%= f.label :food_name, "食べ物名:" %>
-      <%= f.search_field :food_name_cont %>
-      <%= f.label :store_name, "店名:" %>
-      <%= f.search_field :store_name_cont %>
-
+      <span class="search-br">
+        <%= f.label :food_name, "食べ物名:" %>
+        <%= f.search_field :food_name_cont %>
+      </span>
+      <span class="search-br2">
+        <%= f.label :store_name, "店名:" %>
+        <%= f.search_field :store_name_cont %>
+      </span>
       <%= f.submit "検索" %>
     <% end %>
   </div>
@@ -14,7 +17,7 @@
   <div class="post">
     <div class="grand-wrap">
       <% @posts.each do |post| %>
-        <div class="parent-wrap col-md-4">
+        <div class="parent-wrap col-md-4 col-sm-4 col-xs-12">
             <%# 画像 %>
             <div class="child-wrap post-image">
               <%= link_to(post_path(post)) do %>

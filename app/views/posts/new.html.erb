@@ -8,22 +8,22 @@
       </div>
     <%# 食べ物 %>
       <div class="new-item">
-      <%= f.label :料理 %>
-      <%= f.text_field :food_name %>
+        <%= f.label :料理 %>
+        <%= f.text_field :food_name %>
       </div>
     <%# 店名 %>
       <div class="new-item">
-      <%= f.label :店名 %>
-      <%= f.text_field :store_name %>
+        <%= f.label :店名 %>
+        <%= f.text_field :store_name %>
       </div>
     <%# 説明 %>
       <div class="new-item">
-      <p class="new-description"><%= f.label :説明 %></p>
-      <%= f.text_area :description, :size=>"35x5" %>
+        <p class="new-description"><%= f.label :説明 %></p>
+        <%= f.text_area :description, :size=>"35x5" %>
       </div>
     <%# 投稿 %>
       <div class="new-button">
-      <%= f.submit "投稿", class: "btn btn-primary" %>
+        <%= f.submit "投稿", class: "btn btn-primary" %>
       </div>
   <% end %>
 </div>
