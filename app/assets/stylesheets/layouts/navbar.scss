@@ -1,4 +1,4 @@
-@media screen and (min-width:960px) {
+@media screen and (min-width:560px) {
 // ここから左半分
 // 左上のロゴマーク
 .header {
@@ -47,56 +47,6 @@ li {
   color: #F4A460;
 }
 
-}
-
-// タブレット
-@media screen and (min-width:560px) and (max-width:959px) {
-  .header {
-    width: 100%;
-    height: 100px;
-    display: flex;
-  }
-  .heading {
-    width: 50%;
-    color: #F4A460;
-    font-size: 50px;
-    margin: 10px 0 0 20px;
-    font-family: cursive;
-  }
-  .heading-delivery-app {
-    text-decoration:none !important;
-    color: #F4A460;
-  }
-  .heading-delivery-app:hover {
-    color: #F4A460;
-  }
-  
-  // ここから右半分
-  .navbar {
-    width: 50%;
-  }
-  .nav-lists {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 40px;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .menu {
-    font-size: 30px;
-  }
-  
-  .three {
-    margin-right: 50px;
-  }
-  
-  .fa-sandybrown {
-    color: #F4A460;
-  }
- 
 }
 // スマホ
 @media screen and (min-width:320px) and (max-width:559px) {

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :users, :only => [:index]
 
-  get "pages/home" => "pages#home"
+  # get "pages/home" => "pages#home"
 
   root 'posts#index'
 

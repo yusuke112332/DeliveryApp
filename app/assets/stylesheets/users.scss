@@ -1,4 +1,4 @@
-@media screen and (min-width:960px) {
+@media screen and (min-width:560px) {
 // ユーザーの新規登録画面
 h2 {
   text-align: center;
@@ -63,6 +63,12 @@ h2 {
   text-align: center;
   margin-left: 60px;
   font-size: 50px;
+}
+
+.guest_login {
+  position: absolute;
+  top: 450px;
+  left: 600px;
 }
 
 // ユーザー一覧画面
@@ -173,36 +179,6 @@ h2 {
 }
 
 }
-// タブレット
-@media screen and (min-width:560px) and (max-width:959px) {
-  // ログイン画面
-  .login-container {
-    border: 3px solid #F4A460;
-  }
-  .login-title {
-    color: #F4A460;
-    text-align: center;
-    font-size: 50px;
-  }
-  // 新規登録画面
-  .signup-container {
-    border: 3px solid #F4A460;
-    padding: 10px;
-  }
-  .signup-title {
-    color: #F4A460;
-    text-align: center;
-    font-size: 50px;
-  }
-  .field {
-    margin-bottom: 10px;
-  }
-  // ユーザーの編集画面
-  .signup-edit-container {
-    border: 3px solid #F4A460;
-    padding: 10px;
-  }
-}
 // スマホ
 @media screen and (min-width:320px) and (max-width:559px) {
   // ログイン画面
@@ -213,6 +189,10 @@ h2 {
     color: #F4A460;
     text-align: center;
     font-size: 40px;
+  }
+  .guest_login {
+    margin-top: 10px;
+    border: 3px solid #F4A460;
   }
   // 新規登録画面
   .signup-container {
