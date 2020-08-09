@@ -1,9 +1,5 @@
 class ImageUploader < CarrierWave::Uploader::Base
-  if Rails.env.production?
-    storage :fog
-  else
-    storage :file
-  end
+  
 
   # if Rails.env.development?
   #   storage :file
@@ -19,7 +15,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Choose what kind of storage to use for this uploader:
   #storage :file
-  # storage :fog
+  storage :fog
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
