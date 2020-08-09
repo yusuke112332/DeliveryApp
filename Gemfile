@@ -83,3 +83,5 @@ gem 'font-awesome-sass', '~> 5.4.1'
 gem 'kaminari'
 
 gem 'ransack'
+
+# gem 'dot-env'
