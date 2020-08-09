@@ -40,6 +40,8 @@ group :production do
   gem 'pg'
 end
 
+gem 'fog-aws'
+
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
