@@ -9,6 +9,7 @@ https://deliveryapp112233.herokuapp.com
 * Rails5.2.1
 * Bootstrap4
 * sqlite3
+* Heroku
 * AWS(VPC,EC2,S3)
 # 機能一覧
 * ログイン機能
